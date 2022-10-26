@@ -38,6 +38,10 @@ jobs:
       run: echo "Hi ${{ github.event.inputs.name }}"
 
   login_to_intranet:
+
+    - name: SeleniumCICD
+      uses: nakajiss/DockerSeleniumAction@v1.2
+
     runs-on: windows-latest
     
     steps:

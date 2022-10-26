@@ -6,15 +6,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
 #lastname
-lastName = driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[2]/label[2]/div/div[1]/div[1]/input')
+userName = driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[1]/label/div/div[1]/div[1]/input')
+userName.click()
+userName.send_keys("qwerty@tyopmail.com")
+
+firstName = driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[2]/label[1]/div/div[1]/div[1]/input')
+firstName.click()
+firstName.send_keys("qwerty")
+
+lastName = driver.find_element(by=By.XPATH, value='//html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[2]/label[2]/div/div[1]/div[1]/input')
 lastName.click()
-lastName.send_keys("Terry")
-
-driver.implicitly_wait(60)
-WebDriverWait(driver, 10)
-
-country = driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[3]/label[1]/div/div[1]')
-country.send_keys("\ue015")
+lastName.send_keys("tag")
 
 time.sleep(60)
 

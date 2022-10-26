@@ -9,7 +9,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 
 #Url intranet QA
-driver.get("https://qa-intranet.totalcard.com/")
+driver.get("https://dev-intranet.totalcard.com/")
 
 #insert username login
 myUsername = driver.find_element(by=By.XPATH, value='//input[@aria-label="Username"]')
