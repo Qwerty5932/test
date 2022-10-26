@@ -14,18 +14,6 @@ driver.find_element(by=By.XPATH, value='//*[@id="q-app"]/div/div/div/div/div[1]/
 
 driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[1]/aside/div/div/div[1]/div/div/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]/div').click()
 
-driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[1]/aside/div/div/div[1]/div/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div[1]/div/a/div[2]').click()
-
-WebDriverWait(driver, 10)   
-
-driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div[2]/button/span[2]/span/span').click()
-
-driver.implicitly_wait(60)
-WebDriverWait(driver, 10)
-
-driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[2]/label[2]/div/div[1]/div[1]/input').click()
-
-driver.implicitly_wait(60)
-WebDriverWait(driver, 10)
+driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[1]/aside/div/div/div[1]/div/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div[2]/div/a/div[2]').click()
 
 print("Navigation passed")
