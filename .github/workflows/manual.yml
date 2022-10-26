@@ -28,7 +28,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-
+  
+  terry:
     # Runs a single command using the runners shell
     - name: test11
       run: echo "Hi ${{ github.event.inputs.name }}"
