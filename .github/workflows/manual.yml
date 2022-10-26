@@ -43,5 +43,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: login to intranet
-      uses: login_to_intranet
+      uses: login_to_intranet@v1
     
