@@ -37,11 +37,11 @@ jobs:
     - name: test11
       run: echo "Hi ${{ github.event.inputs.name }}"
 
-  login to intranet:
+  login_to_intranet:
     runs-on: ubuntu-latest
     
     steps:
     # Runs a single command using the runners shell
     - name: login to intranet
-      uses: login to intranet.py
+      uses: login_to_intranet
     
