@@ -5,9 +5,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
+#lastname
 lastName = driver.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div/div/div[2]/div/div/form/div[3]/div[2]/label[2]/div/div[1]/div[1]/input')
 lastName.click()
-lastName.send_keys("\ue004'")
+lastName.send_keys("Terry")
 
 driver.implicitly_wait(60)
 WebDriverWait(driver, 10)
