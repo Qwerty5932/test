@@ -63,7 +63,7 @@ jobs:
         pip install requests beautifulsoup4 pandas webdriver-manager selenium
         pip install packaging
       
-    - name: Run
+    - name: Login to Intranet QA
       run: python3 login_to_intranet_v1.py
     - name: Navigation
       run: python3 Menu_File_User_CreateUser.py
