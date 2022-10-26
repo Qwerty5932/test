@@ -42,6 +42,24 @@ jobs:
     
     steps:
     # Runs a single command using the runners shell
-    - name: login to intranet
-      uses: login_to_intranet@v1
-    
+
+    - name: Git clone (checkout) main branch to current directory
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Installed package list
+      run: apt list --installed
+    - name: Remove Chrome
+      run: sudo apt purge google-chrome-stable
+    - name: Remove default Chromium
+      run: sudo apt purge chromium-browser
+    - name: Install a new Chromium
+      run: sudo apt install -y chromium-browser
+    - name: Install all necessary packages
+      run: pip install requests beautifulsoup4 pandas webdriver-manager selenium
+      
+    - name: Run
+      run: python3 login_to_intranet.py
