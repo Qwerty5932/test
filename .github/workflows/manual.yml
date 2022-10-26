@@ -39,8 +39,7 @@ jobs:
 
   login_to_intranet:
 
-    - name: SeleniumCICD
-      uses: nakajiss/DockerSeleniumAction@v1.2
+    runs-on: windows-latest
     
     steps:
     # Runs a single command using the runners shell
