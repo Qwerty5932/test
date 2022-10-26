@@ -65,4 +65,4 @@ jobs:
         pip install packaging
       
     - name: Login to Intranet QA
-      run: CreateUser_intranet.py
+      run: test.py
