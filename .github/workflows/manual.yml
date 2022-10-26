@@ -59,7 +59,9 @@ jobs:
     - name: Install a new Chromium
       run: sudo apt install -y chromium-browser
     - name: Install all necessary packages
-      run: pip install requests beautifulsoup4 pandas webdriver-manager selenium
+      run: |
+        pip install requests beautifulsoup4 pandas webdriver-manager selenium
+        pip install packaging
       
     - name: Run
       run: python3 login_to_intranet.py
