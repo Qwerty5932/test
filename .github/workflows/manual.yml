@@ -65,8 +65,4 @@ jobs:
         pip install packaging
       
     - name: Login to Intranet QA
-      run: python3 login_to_intranet_v1.py
-    - name: Navigation
-      run: python3 Menu_File_User_CreateUser.py
-    - name: Fill form
-      run: python3 FillForm_CreateUser.py
+      run: CreateUser_intranet.py
