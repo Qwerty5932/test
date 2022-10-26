@@ -31,4 +31,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: test11
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      run: echo "Hi ${{ github.event.inputs.name }}"
