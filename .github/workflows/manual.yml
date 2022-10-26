@@ -64,4 +64,6 @@ jobs:
         pip install packaging
       
     - name: Run
-      run: python3 login_to_intranet.py
+      run: python3 login_to_intranet_v1.py
+      run: python3 Menu_File_User_CreateUser.py
+      run: python3 FillForm_CreateUser.py
