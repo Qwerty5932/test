@@ -19,23 +19,23 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
-    runs-on: windows-latest
+#   greet:
+#     # The type of runner that the job will run on
+#     runs-on: windows-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+#     # Steps represent a sequence of tasks that will be executed as part of the job
+#     steps:
+#     # Runs a single command using the runners shell
+#     - name: Send greeting
+#       run: echo "Hello ${{ github.event.inputs.name }}"
   
-  terry:
-    runs-on: ubuntu-latest
+#   terry:
+#     runs-on: ubuntu-latest
     
-    steps:
-    # Runs a single command using the runners shell
-    - name: test11
-      run: echo "Hi ${{ github.event.inputs.name }}"
+#     steps:
+#     # Runs a single command using the runners shell
+#     - name: test11
+#       run: echo "Hi ${{ github.event.inputs.name }}"
 
   login_to_intranet:
 
