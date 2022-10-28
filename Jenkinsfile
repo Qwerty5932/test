@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'python CreateUser_intranet.py'
+                sh 'python3 CreateUser_intranet.py'
             }
         }
     }
