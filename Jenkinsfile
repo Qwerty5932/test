@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh 'python3 --version'
+                sh 'python --version'
             }
         }
         stage('test') {
             steps {
-                sh 'python3 CreateUser_intranet.py'
+                sh 'python CreateUser_intranet.py'
             }
         }
     }
