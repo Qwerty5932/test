@@ -1,21 +1,16 @@
 pipeline {
-    agent any
+    agent { docker { image 'python:3.10.7-alpine' } }
     stages {
-        stage("Clean Up"){
+        stage('build') {
             steps {
-                deleteDir()
+                sh 'python --version'
             }
         }
-        stage("Clone Repo"){
+    }
+    stages {
+        stage('test') {
             steps {
-                sh "git clone https://github.com/Qwerty5932/test.git"
-            }
-        }
-        stage("Test"){
-            steps {
-                dir("build"){
-                    sh "python CreateUser_intranet.py"
-                }
+                sh 'python CreateUser_intranet.py'
             }
         }
     }
